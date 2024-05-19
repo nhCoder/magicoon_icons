@@ -1,7 +1,9 @@
 name: magicoon_icons
 description: "4k+ Magicoon icons for flutter"
-version: 0.0.1
-homepage:
+version: 0.0.4
+homepage: "https://github.com/nhCoder/magicoon_icons"
+repository: "https://github.com/nhCoder/magicoon_icons"
+
 
 environment:
   sdk: '>=3.4.0 <4.0.0'
@@ -15,6 +17,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  build_runner:
   icon_font_generator: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
@@ -54,14 +57,12 @@ flutter:
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
   fonts:
-    - family: MagicoonIconsLight
+    - family: MagicoonIcons
       fonts:
-        - asset: fonts/MagicoonLight.ttf
-    - family: MagicoonIconsFilled
-      fonts:
-        - asset: fonts/MagicoonFilled.ttf
-
+        - asset: lib/assets/fonts/MagicoonIcons.ttf
+#    - family: MagicoonIconsFilled
+#      fonts:
+#        - asset: lib/fonts/magicoon_filled.ttf
 
 scripts:
-  gen_regular_icons: icon_generator --from=regular --class-name=MagicoonIcons --out-font=lib/assets/fonts/magicoon_regular.ttf --out-flutter=lib/magicoon_regular_icons.dart
-  gen_filled_icons: icon_generator --from=filled --class-name=MagicoonIconsFilled --out-font=lib/assets/fonts/magicoon_filled.ttf --out-flutter=lib/magicoon_filled_icons.dart
+  regular: generator regular lib/fonts/magicoon_regular.otf --output-class-file=lib/magicoon.dart -r
