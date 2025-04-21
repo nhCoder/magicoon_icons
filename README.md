@@ -1,22 +1,20 @@
 Magicoon Icons for Flutter
 
-## Features
+## Whats in the package
 
--4000+ icons available in the package.
--Icons are available in 2 different sizes.
-
+- 2426+ icons available in the package.
+- Icons are available in 2 different style (filled and  regular)
 
 ## Usage
 
 Use regular icons
 
 ```
-Iocns(MagicoonIcons.activity_circle)
+Icon(MagicoonRegular.copy)
 ```
-
 Use Filled icons
 
 ```
-Icons(MagicoonIconsFilled.activity_circle);
+Icons(MagicoonFilled.copy);
 ```
 

@@ -1,6 +1,6 @@
 name: magicoon_icons
 description: "4k+ Magicoon icons for flutter"
-version: 0.0.4
+version: 0.0.5
 homepage: "https://github.com/nhCoder/magicoon_icons"
 repository: "https://github.com/nhCoder/magicoon_icons"
 
@@ -57,12 +57,13 @@ flutter:
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
   fonts:
-    - family: MagicoonIcons
+    - family: MagicoonRegular
       fonts:
-        - asset: lib/assets/fonts/MagicoonIcons.ttf
-#    - family: MagicoonIconsFilled
-#      fonts:
-#        - asset: lib/fonts/magicoon_filled.ttf
+        - asset: assets/fonts/magicoon_regular.ttf
+    - family: MagicoonFilled
+      fonts:
+        - asset: assets/fonts/magicoon_filled.ttf
 
 scripts:
   regular: generator regular lib/fonts/magicoon_regular.otf --output-class-file=lib/magicoon.dart -r
+  push: dart pub publish
